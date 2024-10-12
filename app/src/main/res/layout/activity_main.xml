@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#A39CF2FF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:text="Выбирай свою историю"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/secret_forest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="forSecretActivity"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/forest"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="370dp"
+                    android:fontFamily="serif"
+                    android:text="Тайна чёрного леса"
+                    android:textAlignment="center"
+                    android:textColor="#FFC803"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/zagadka_tishini"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="forRiddlesActivity"
+                    android:src="@drawable/zast"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="370dp"
+                    android:fontFamily="serif"
+                    android:text="Загадки тишины"
+                    android:textAlignment="center"
+                    android:textColor="#FFC803"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+        </FrameLayout>
+
+            <Button
+                android:id="@+id/button_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#8695DDFF"
+                android:onClick="forTwoActivity"
+                android:text="Выход"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:fontFamily="serif"/>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

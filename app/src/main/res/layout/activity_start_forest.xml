@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartForestActivity"
+    android:background="#A39CF2FF">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_forest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="    Парень наконец приехали в деревню, чтобы отдохнуть после тяжелого года. Деревня совсем небольшая, в ней поядка сорока домов, а из достопримечательностей лишь конный двор да маленький магазинчик. Молодежи в деревни нет, лишь старики здесь доживают свой век. О Чемодарихе мало кто слышал, а в интернете и подавно никто не знал. На новые наушкники и ноутбук бабушка и дедушка Лёвы смотрели, как на что-то сверхъестественное. Студент понимал, что предстоящие каникулы в дерене будут жутко весёлыми...
+Правда он и сам хотел уехать подальше от всего этого - ненавистный город угнетал его своей атмосферой. Всё в нём напоминало ему о той самой любимой, но неверной девушке. Каждая тропинка, где они гуляли, каждый переулок и сквер, каждый магазинчик, где они смеялись и дурачились... Первое время его душили воспоминания, после них же осталась тупая ноющая боль, не дающая парню покоя. Чтобы не сойти с ума и не натворить глупостей, Лёва и приехал сюда, в глухую деревеньку Чемодариха..."
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                />
+
+            <Button
+                android:id="@+id/button_forest_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#8695DDFF"
+                android:fontFamily="serif"
+                android:onClick="setButton_forest_1"
+                android:text="День первый"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_forest_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#8695DDFF"
+                android:fontFamily="serif"
+                android:onClick="setButton_forest_1"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_forest_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#8695DDFF"
+                android:fontFamily="serif"
+                android:onClick="setButton_forest_1"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#8695DDFF"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:onClick="forSecretActivity"
+                android:text="Выход"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints"
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

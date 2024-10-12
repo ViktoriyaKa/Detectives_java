@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiddlesSilenceActivity"
+    android:background="#A39CF2FF">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="-96dp"
+    tools:layout_editor_absoluteY="-43dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="serif"
+                android:gravity="clip_horizontal"
+                android:text="Что может хранить в себе тишина? Сколько она может рассказать нам? Пожалуй, Вы и представить себе не можете. Но что может произойти, если кто-нибудь всё же разгадает эти тайны? К чему это приведёт? И самое главное, сможем ли мы с этим справиться?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="serif"
+                android:gravity="clip_horizontal"
+                android:text="Информация об истории:"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="serif"
+                android:gravity="clip_horizontal"
+                android:text="Жанр - детектив, приключения, мистика
+                                  Успешых концовок - 7
+                       Проигрышных концовок - 20
+                                            Сложность - средняя
+                Протяженность - длинная"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/start_silence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#8695DDFF"
+                android:fontFamily="serif"
+                android:onClick="forStartSilenceActivity"
+                android:text="Начать" />
+
+            <Button
+                android:id="@+id/next_silence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#8695DDFF"
+                android:fontFamily="serif"
+                android:onClick="forStartSilenceActivity"
+                android:text="Продолжить" />
+
+            <Button
+                android:id="@+id/exit_menu_silence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#8695DDFF"
+                android:onClick="forTwoActivity"
+                android:text="Выход"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+</android.support.constraint.ConstraintLayout>
